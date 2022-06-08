@@ -1,0 +1,5 @@
+#!/bin/bash
+#get the current branch
+branch=$(git rev-parse --abbrev-ref HEAD)
+#Push the changes and set the upstream branch
+git push --set-upstream origin $branch
